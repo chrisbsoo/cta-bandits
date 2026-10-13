@@ -1,10 +1,23 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bandits"
+name = "tacb"
 version = "0.1.0"
+description = "Time-Attention Contesting Bandits: oracle, policies and experiment runner"
+requires-python = ">=3.10"
+dependencies = ["numpy", "numba", "scipy", "pandas", "matplotlib"]
+
+[project.optional-dependencies]
+modal = ["modal"]
+dev = ["pytest"]
+
+[project.scripts]
+tacb = "tacb.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+include = ["tacb*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,13 @@
+region,m,policy,mean,std,count
+attention-dominant,1,etc(gamma=0.666667),0.4862304228801709,,1
+attention-dominant,1,ucb1,0.4976973195415636,,1
+attention-dominant,2,etc(gamma=0.666667),0.5822978149718853,,1
+attention-dominant,2,ucb1,0.8941429517388559,,1
+contested,1,etc(gamma=0.666667),1.0326154559245435,,1
+contested,1,ucb1,0.6212240991384528,,1
+contested,2,etc(gamma=0.666667),0.9668459682338768,,1
+contested,2,ucb1,0.7422778350193482,,1
+time-dominant,1,etc(gamma=0.666667),0.6137328219707407,,1
+time-dominant,1,ucb1,0.2275522170882527,,1
+time-dominant,2,etc(gamma=0.666667),0.6658560890257195,,1
+time-dominant,2,ucb1,0.1249241552208256,,1
